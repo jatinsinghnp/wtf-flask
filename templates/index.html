@@ -1,0 +1,20 @@
+
+
+{% if name %}
+     hellow user {{name}} <br>
+     this is {{num}}
+  {% else %}
+  
+  pleast enter the name :
+{% endif %}
+<form action="" method="POST">
+      
+    {{form.csrf}}
+    {{form.hidden_tag()}}
+
+    {{form.name.label}}{{form.name()}}  <br>
+  
+      {{form.number.label}}{{form.number()}}
+    {{form.submit()}}
+
+</form>
